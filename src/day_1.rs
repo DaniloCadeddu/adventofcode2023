@@ -1,5 +1,7 @@
 use super::commons;
 
+const INPUT_FILE_NAME: &str = "day_1.txt";
+
 /**
 --- Day 1: Trebuchet?! ---
 
@@ -39,9 +41,6 @@ treb7uchet
 In this example, the calibration values of these four lines are 12, 38, 15, and 77. Adding these together produces 142.
 Consider your entire calibration document. What is the sum of all of the calibration values?
  */
-
-const INPUT_FILE_NAME: &str = "day_1.txt";
-
 fn first_part() {
     let file_content = commons::get_input(INPUT_FILE_NAME);
     let mut calibration_sum: i32 = 0;

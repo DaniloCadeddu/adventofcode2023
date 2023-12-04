@@ -2,6 +2,16 @@ use std::collections::HashMap;
 
 use super::commons;
 
+const INPUT_FILE_NAME: &str = "day_2.txt";
+
+const MAX_RED_CUBES: u32 = 12;
+const MAX_GREEN_CUBES: u32 = 13;
+const MAX_BLUE_CUBES: u32 = 14;
+
+const RED: &str = "red";
+const GREEN: &str = "green";
+const BLUE: &str = "blue";
+
 /**
  --- Day 2: Cube Conundrum ---
 
@@ -46,16 +56,6 @@ However, game 3 would have been impossible because at one point the Elf showed y
 Determine which games would have been possible if the bag had been loaded with only 12 red cubes, 13 green cubes, and 14 blue cubes.
 What is the sum of the IDs of those games?
  */
-const INPUT_FILE_NAME: &str = "day_2.txt";
-
-const MAX_RED_CUBES: u32 = 12;
-const MAX_GREEN_CUBES: u32 = 13;
-const MAX_BLUE_CUBES: u32 = 14;
-
-const RED: &str = "red";
-const GREEN: &str = "green";
-const BLUE: &str = "blue";
-
 fn first_part() {
     let file_content = commons::get_input(INPUT_FILE_NAME);
 
